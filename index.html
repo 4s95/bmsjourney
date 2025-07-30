@@ -2,7 +2,7 @@
 <html lang="ja">
 
 <head>
-    <title>SNN's chart</title>
+    <title>bms journey</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,10 +27,14 @@
     <div class="container">
 
         <div class="alert alert-success mb-3" role="alert">
-            <p>scN = stN。</p>
-            <p>差分名[+]は個人差寄りの譜面となっています。</p>
+            <p>個人的に刺さった差分を集めた難易度表です</p>
+            <p>area0~area23:★に対応</p>
+            <p>area24:st4～5に対応(=★★4)</p>
+            <p>area25:st6～8に対応(=★★5)</p>
+            <p>area26:st9～10に対応(=★★6)</p>
+            <p>area27:st11～12に対応(=★★6+～★★7)</p>
             <hr>
-            <p class="mb-0">鋭意改修中でございます</p>
+            
         </div>
 
 
@@ -86,9 +90,8 @@
 
 
                     //url
-                  　$("<td width='10%'><a href='" + info[i].url + "' target='_blank'>DL</a></td>").appendTo(str);
-                    //url_diff
-                    $("<td width='10%'><a href='" + info[i].url_diff + "' target='_blank'>DL</a></td>").appendTo(str);
+                  　$("<td width='20%'><a href='" + info[i].charter + "' target='_blank'>DL</a></td>").appendTo(str);
+                    
 
                     // Comment
                     $("<td width='25%'>" + info[i].comment + "</td>").appendTo(str);
